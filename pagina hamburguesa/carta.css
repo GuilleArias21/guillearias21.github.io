@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+ 
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(222,20,125,1) 0%, rgba(0,212,255,1) 100%);
+}
+.logo{
+    max-width: 180px;
+    
+}
+header{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 2rem;
+     background-color: rgb(235, 123, 181);
+     
+}
+
+.p{
+    font-size: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: left;
+
+}
+.abrir-menu{
+    display: flex;
+    justify-content: right;
+}
+.nav-list{
+    list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        background-color: rgb(235, 123, 181);
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+   
+    
+}
+
+@media screen and (max-width:1920px){
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+    
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+      
+        background-color: rgb(235, 123, 181);
+        padding: 2rem;
+       /* box-shadow:  0 0 0 100vmax rgba(0, 0, 0, .5);*/
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a{
+        color: rgb(0, 0, 0);
+    }
+}
+.nav{
+    
+
+}
+
+.h1-1{
+display: flex;
+
+}
+
+.h1-2{
+    display: flex;
+    
+}
+.h1-3{
+    display: flex;
+    
+}
+
+.h1-4{
+    display: flex;
+   
+}
+
+
+.burguer1{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+}
+
+.burguer2{
+    display: flex;   
+    gap: 20rem;
+    justify-content: right;
+    width: 600px;
+    height: 500px;
+    margin-left: 820px;
+    background-color: brown;
+}
+
+.burguer3{
+    display: flex;
+    gap: 20rem;
+    justify-content: left;
+    width: 600px;
+    height: 500px;
+   
+    background-color: brown;
+}
+
+.burguer4{
+    display: flex;
+    gap: 20rem;
+    justify-content: right;
+    width: 600px;
+    height: 500px;
+    margin-left: 820px;
+    background-color: brown;
+}
